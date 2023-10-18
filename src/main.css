@@ -1,0 +1,49 @@
+.weather-bg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: background-color .3s;
+}
+.weather-bg.day{
+  background-color: #51b3fe;
+}
+.weather-bg.night{
+  background-color: #00172a;
+}
+.input-city{
+  background-color: rgba(0,0,0,.3);
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px 10px;
+}
+.input-city:focus{
+  outline: 1px solid #fff;
+}
+.weather-container{
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+.slash{
+  position: relative;
+  padding-left: 0.5rem;
+}
+.slash::after{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  width: 1px;
+  height: 60%;
+  background: #fff;
+  opacity: 0.5;
+}
+.op-5{
+  scale: .8;
+  opacity: .5;
+  transition: all .3s;
+}
