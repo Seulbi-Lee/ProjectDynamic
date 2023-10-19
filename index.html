@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Weather</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./src/main.css">
 </head>
@@ -32,25 +32,23 @@
           <span id="tempMin"></span>
           <span class="slash" id="tempMax"></span>
         </div>
-        <div class="cloths">
-          
-        </div>
+        <div class="mt-6" id="cloths"></div>
       </section>
       <section class="forecast-box">
         <ul class="forecast-list">
           <li class="forecast-item">
-            <button type="button">
-              <span class="days-title">Today</span>
-              <span class="days-icon">icon</span>
+            <div class="days-day"></div>
+            <div class="days-date"></div>
+            <div class="days-icon"></div>
+            <div class="days-temp">
               <span class="days-temp-min"></span>
               <span class="days-temp-max"></span>
-            </button>
+            </div>
           </li>
         </ul>
       </section>
     </div>
   </div>
-
 
   <script src="./src/common.js"></script>
 </body>
